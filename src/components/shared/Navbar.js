@@ -55,7 +55,15 @@ function Navbar() {
                         ))}
                     </Box>
 
-                    <Box className="flex justify-between">
+                    <Box sx={{
+                        "& svg": {
+                            color: "white",
+                            fontSize: "2rem",
+                            "&:hover": {
+                                color: "#00acee"
+                            }
+                        }
+                    }} className="flex justify-between">
                         <IconButton>
                             <Twitter />
                         </IconButton>
